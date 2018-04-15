@@ -1,7 +1,138 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 50px;
+        }
+
+        h1,
+        h2 {
+            font-family: sans-serif;
+            text-transform: uppercase;
+        }
+
+        .title {
+            font-size: 50px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            margin: 0px auto;
+        }
+
+        .slogan {
+            font-size: 24px;
+            font-style: italic;
+            text-transform: capitalize;
+            color: rgb(0, 0, 0);
+        }
+
+        .more-space,
+        .year {
+            word-spacing: 2px;
+            color: gray;
+            font-weight: bold;
+        }
+
+        .project {
+            color: gray;
+            text-transform: uppercase;
+        }
+
+        #experience {
+            text-decoration: underline;
+        }
+
+        table.tb-experience {
+            border-collapse: collapse;
+        }
+
+        table.tb-experience th,
+        table.tb-experience td {
+            padding: 10px;
+        }
+
+        #bg-header {
+            height: 400px;
+            display: block;
+            margin: 0px auto;
+        }
+
+        .subject {
+            text-align: left;
+            color: black;
+        }
+
+        div.content {
+            width: 100%;
+            max-width: 1300px;
+            float: left;
+            clear: both;
+        }
+    </style>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="content">
+        <h1 class="title">About ME</h1>
+        <hr>
+        <p>
+            <img src="images/kangaroo.png" alt="" id="bg-header">
+        </p>
+        <blockquote class="slogan">
+            <strong>
+                <q>Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment</q>
+                <br> ...Buddha...
+            </strong>
+        </blockquote>
+        <hr>
+        <h1 class="subject">Napat Rungruangbangchan</h1>
+        <h2>Contact</h2>
+        <ul>
+            <li>
+                <strong>Email</strong>: napat.joeATgmail.com</li>
+            <li>
+                <strong>Line</strong>: Joe_jj</li>
+            <li>
+                <strong>Website</strong>:
+                <a href="https://napat.github.io/">napat.github.io</a>
+            </li>
+        </ul>
+        <h2>Graduated</h2>
+        <ul>
+            <li>Telecomunication engineering at KMITL<i> (Bachelor / Master)</i>
+            </li>
+        </ul>
+        <h2>Skill</h2>
+        <ul>
+            <li class="more-space">C, Python, Golang, Networking, Linux, Device Driver, Embedded System (IoT), HTML, CSS, Javascript
+                <!-- <a href="#">Hobby</a> -->
+            </li>
+        </ul>
+        <h2 id="experience">Experience</h2>
+        <table border="1" width="100%" class="tb-experience">
+            <tr>
+                <td class="year">2010 - 2012</td>
+                <td class="project">Software Engineer at Forth Corporation</td>
+            </tr>
+            <tr>
+                <td class="year">2013 - 2017</td>
+                <td class="project">Senior Software Engineer at Forth Corporation</td>
+            </tr>
+            <tr>
+                <td class="year">2018 - present</td>
+                <td class="project">Senior Team Leader at Forth Corporation</td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <br>
+    </div>
 </body>
+
 </html>
