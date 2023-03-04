@@ -1,16 +1,18 @@
-# Vscode Setup for golang
+# Golang Vscode Setup
 
-## Extensions 
+## Installation
 
-1. ติดตั้ง [Go for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=golang.go) Extension ให้เรีบร้อย  
-2. เปิด Command Palette โดยการกด `Cmd+Shift+P` และเลือกไปที่ `Install/Update Tools command` ติ๊กเลือก tools ที่อยู่ใน list ทุกตัวและ install
+1. ติดตั้ง [Go for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=golang.go) extension
+2. เปิด Command Palette (`Cmd+Shift+P`) เลือกไปที่ `Install/Update Tools command` และติดตั้ง tools ใน list ทุกตัว
+
+![vscode-gotools](/images/vscode-gotools-install.jpg)
 
 ## Settings
 
-เราสามารถเพิ่ม settings ให้กับ workspace ได้ด้วยการเพิ่ม `.vscode/settings.json` เข้าไปยัง root ของ project
+สร้างไฟล์ `.vscode/settings.json` เข้าไปยัง root ของ project เพื่อกำหนด settings ให้กับ workspace
 
 ``` bash
-├── demoapp
+├── foo
     ├── .vscode
     │   └──settings.json
     ...
@@ -20,7 +22,7 @@
 
 ``` json
 {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "[go]": {
         "editor.defaultFormatter": "golang.go"
     },
@@ -34,6 +36,6 @@
 
 ## Reference
 
-- https://dev.to/ko31/how-to-setup-golang-with-vscode-1i4i
-- https://code.visualstudio.com/docs/languages/go#_intellisense
-- https://github.com/mvdan/gofumpt
+- [How to setup golang with vscode](https://dev.to/ko31/how-to-setup-golang-with-vscode-1i4i)
+- [Go intellisense](https://code.visualstudio.com/docs/languages/go#_intellisense)
+- [gofumpt](https://github.com/mvdan/gofumpt)
