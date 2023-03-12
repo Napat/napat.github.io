@@ -22,7 +22,8 @@
 
 ``` json
 {
-    "editor.formatOnSave": true,
+    // Formater: gofumpt 
+    "editor.formatOnSave": false,
     "[go]": {
         "editor.defaultFormatter": "golang.go"
     },
@@ -30,12 +31,27 @@
     "gopls": { 
         "ui.semanticTokens": true,
         "formatting.gofumpt": true
-    }
+    },
+    
+    // Unit Test
+    "go.coverOnSave": true,
+    "go.coverOnSingleTest": true,
+    "go.coverageDecorator": {
+        "type": "gutter",
+        "coveredBorderColor" :  "rgba(64,128,128,0.5)",
+        "uncoveredBorderColor" :    "rgba(128,64,64,0.25)",
+        "coveredHighlightColor": "rgba(64,128,128,0.5)",
+        "uncoveredHighlightColor": "rgba(128,64,64,0.25)",        
+        "coveredGutterStyle": "blockgreen",
+        "uncoveredGutterStyle": "blockred"
+    },
+    "go.coverageOptions": "showBothCoveredAndUncoveredCode",
 }
 ```
 
-## Reference
+## References
 
-- [How to setup golang with vscode](https://dev.to/ko31/how-to-setup-golang-with-vscode-1i4i)
+- [How to setup Golang with Vscode](https://dev.to/ko31/how-to-setup-golang-with-vscode-1i4i)
 - [Go intellisense](https://code.visualstudio.com/docs/languages/go#_intellisense)
 - [gofumpt](https://github.com/mvdan/gofumpt)
+- [Unittest Vscode configuration](https://github.com/golang/vscode-go/blob/master/docs/settings.md#gocoveragedecorator)
