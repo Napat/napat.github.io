@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. ติดตั้ง [Go for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=golang.go) extension
+1. เปิด Vscode ขึ้นมาแล้วติดตั้ง extension ที่ชื่อว่า [Go for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=golang.go) ให้เรียบร้อย
 2. เปิด Command Palette (`Cmd+Shift+P`) เลือกไปที่ `Install/Update Tools command` และติดตั้ง tools ใน list ทุกตัว
 
 ![vscode-gotools](/images/vscode-gotools-install.jpg)
@@ -23,7 +23,7 @@
 ``` json
 {
     // Formater: gofumpt 
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "[go]": {
         "editor.defaultFormatter": "golang.go"
     },

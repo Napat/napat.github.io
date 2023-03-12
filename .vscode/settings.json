@@ -1,0 +1,27 @@
+{
+    // Formater: using gofumpt 
+    "editor.formatOnSave": false,
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+    "go.useLanguageServer": true,
+    "gopls": { 
+        "ui.semanticTokens": true,
+        "formatting.gofumpt": true
+    },
+    
+    // Unit Test
+    // https://github.com/golang/vscode-go/blob/master/docs/settings.md#gocoveragedecorator
+    "go.coverOnSave": true,
+    "go.coverOnSingleTest": true,
+    "go.coverageDecorator": {
+        "type": "gutter",
+        "coveredBorderColor" :  "rgba(64,128,128,0.5)",
+        "uncoveredBorderColor" :    "rgba(128,64,64,0.25)",
+        "coveredHighlightColor": "rgba(64,128,128,0.5)",
+        "uncoveredHighlightColor": "rgba(128,64,64,0.25)",        
+        "coveredGutterStyle": "blockgreen",
+        "uncoveredGutterStyle": "blockred"
+    },
+    "go.coverageOptions": "showBothCoveredAndUncoveredCode",
+}

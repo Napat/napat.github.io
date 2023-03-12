@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        "golang.go", 
+        "mhutchie.git-graph",
+        "humao.rest-client", 
+        "redhat.vscode-yaml", 
+        "tabnine.tabnine-vscode", 
+        "bierner.markdown-mermaid",
+        "aykutsarac.jsoncrack-vscode", 
+        "naumovs.color-highlight", 
+        "ms-azuretools.vscode-docker",
+        "ritwickdey.liveserver", 
+        "davidanson.vscode-markdownlint", 
+        "quicktype.quicktype",
+        "ms-vscode-remote.remote-containers"
+    ]
+}
